@@ -1,156 +1,186 @@
 <!DOCTYPE html>
 <html lang="lo">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ຮ້ານ ນ້ຳດ່າງສົດຊື່ນ - ແນະນຳສິນຄ້າ</title>
-  <style>
-    body {
-      font-family: "Noto Sans Lao", sans-serif;
-      background-color: #ecfeff;
-      display: flex;
-      justify-content: center;
-      padding: 40px 16px;
-      margin: 0;
-    }
-
-    .product-card {
-      background: #ffffff;
-      max-width: 380px;
-      width: 100%;
-      border-radius: 14px;
-      overflow: hidden;
-      box-shadow: 0 6px 18px rgba(8, 145, 178, 0.12);
-      border: 1px solid #cffafe;
-    }
-
-    .store-header {
-      background: linear-gradient(135deg, #0891b2, #0e7490);
-      color: #ffffff;
-      padding: 12px 18px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .store-name {
-      font-size: 1rem;
-      font-weight: bold;
-      letter-spacing: 0.3px;
-    }
-
-    .store-tag {
-      font-size: 0.75rem;
-      background: rgba(255, 255, 255, 0.2);
-      padding: 3px 9px;
-      border-radius: 999px;
-    }
-
-    .product-image {
-      width: 100%;
-      height: 250px;
-      object-fit: cover;
-      display: block;
-    }
-
-    .product-body {
-      padding: 22px;
-    }
-
-    .badge {
-      display: inline-block;
-      background-color: #cffafe;
-      color: #0e7490;
-      font-size: 0.8rem;
-      font-weight: bold;
-      padding: 4px 10px;
-      border-radius: 999px;
-      margin-bottom: 10px;
-    }
-
-    .product-title {
-      margin: 0 0 8px;
-      font-size: 1.3rem;
-      color: #164e63;
-    }
-
-    .product-desc {
-      margin: 0 0 16px;
-      font-size: 0.95rem;
-      color: #334155;
-      line-height: 1.55;
-    }
-
-    .specs {
-      list-style: none;
-      padding: 0;
-      margin: 0 0 18px;
-      font-size: 0.9rem;
-      color: #0f766e;
-    }
-
-    .specs li {
-      margin-bottom: 6px;
-    }
-
-    .product-price {
-      font-size: 1.25rem;
-      font-weight: bold;
-      color: #0284c7;
-      margin-bottom: 16px;
-    }
-
-    .buy-btn {
-      display: block;
-      width: 100%;
-      text-align: center;
-      box-sizing: border-box;
-      background-color: #0891b2;
-      color: #ffffff;
-      text-decoration: none;
-      padding: 11px 16px;
-      border-radius: 8px;
-      font-weight: bold;
-    }
-
-    .buy-btn:hover {
-      background-color: #0e7490;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Coca-Cola Zero Sugar</title>
+<style>
+*{box-sizing:border-box}
+body{
+ margin:0;
+ font-family:Arial,sans-serif;
+ background:#f5f5f5;
+ color:#222;
+ line-height:1.8;
+}
+header{
+ background:#111;
+ color:white;
+ padding:18px;
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ flex-wrap:wrap;
+}
+.logo{font-size:24px;font-weight:bold;color:#ed001b}
+nav a{
+ color:white;text-decoration:none;
+ margin:8px;font-size:14px;
+}
+.hero{
+ background:linear-gradient(135deg,#111,#c9001b);
+ color:white;text-align:center;
+ padding:40px 15px;
+}
+.hero img{
+ width:90%;max-width:450px;
+ border-radius:15px;
+}
+.hero h1{font-size:35px;color:white}
+.container{
+ max-width:950px;
+ margin:auto;padding:20px;
+}
+.card{
+ background:white;
+ padding:25px;
+ margin:20px 0;
+ border-radius:15px;
+ box-shadow:0 3px 12px #0001;
+}
+h2{color:#cf001a}
+.product{
+ width:100%;max-width:420px;
+ display:block;margin:15px auto;
+ border-radius:12px;
+}
+.info{
+ background:#fff0f1;
+ padding:15px;
+ border-left:5px solid #d0001b;
+}
+.btn{
+ display:inline-block;
+ padding:12px 23px;
+ border-radius:30px;
+ text-decoration:none;
+ color:white;background:#d0001b;
+ margin:8px 3px;
+}
+.wa{background:#19a85b}
+footer{
+ background:#111;color:white;
+ text-align:center;padding:25px;
+}
+@media(max-width:600px){
+ header{justify-content:center}
+ nav{text-align:center}
+ .hero h1{font-size:27px}
+}
+</style>
 </head>
 <body>
 
-  <div class="product-card">
-    <!-- ແຖບແປະຊື່ຮ້ານ -->
-    <div class="store-header">
-      <span class="store-name">ຮ້ານ ນ້ຳດ່າງສົດຊື່ນ</span>
-      <span class="store-tag">ຮ້ານທາງການ</span>
-    </div>
+<header>
+ <div class="logo">COCA-COLA</div>
+ <nav>
+  <a href="#home">ໜ້າຫຼັກ</a>
+  <a href="#about">ສິນຄ້າ</a>
+  <a href="#study">ການສຶກສາ</a>
+  <a href="#contact">ຕິດຕໍ່</a>
+ </nav>
+</header>
 
-    <!-- ປ່ຽນ src ເປັນທີ່ຢູ່ຮູບພາບຂວດນ້ຳດ່າງຂອງທ່ານ (ເຊັ່ນ: images/alkaline-water.jpg) -->
-    <img
-      src="nam.jpg"
-      alt="ຜະລິດຕະພັນນ້ຳດ່າງ pH 8.5+"
-      class="product-image"
-    />
+<section class="hero" id="home">
+ <h1>COCA-COLA ZERO SUGAR</h1>
+ <h2 style="color:white">ສູດບໍ່ມີນ້ຳຕານ</h2>
+ <p>ເປີດປະສົບການຄວາມສົດຊື່ນ</p>
+ <img src="image.png"
+ alt="Coca-Cola Zero Sugar">
+</section>
 
-    <div class="product-body">
-      <span class="badge">ນ້ຳດ່າງທຳມະຊາດ</span>
-      <h2 class="product-title">ນ້ຳດ່າງ PureLife (1 ແພັກ / 12 ຂວດ)</h2>
-      <p class="product-desc">
-        ນ້ຳດື່ມທີ່ຜ່ານການກັ່ນຕອງຄຸນນະພາບ ມີຄ່າ pH 8.5+ ຊ່ວຍປັບສົມດຸນໃຫ້ຮ່າງກາຍ ດື່ມງ່າຍ ສົດຊື່ນທຸກມື້.
-      </p>
+<main class="container">
 
-      <ul class="specs">
-        <li>• ຄ່າ pH: 8.5 - 9.0</li>
-        <li>• ຂະໜາດ: 600 ml x 12 ຂວດ</li>
-        <li>• ຜ່ານມາດຕະຖານຄວາມສະອາດ</li>
-      </ul>
+<section class="card" id="about">
+ <h2>1. ຂໍ້ມູນທົ່ວໄປຂອງສິນຄ້າ</h2>
+ <img class="product" src="image.png"
+ alt="Coca-Cola Zero Sugar 24 cans">
 
-      <div class="product-price">45,000 ກີບ / ແພັກ</div>
-      <a href="#order" class="buy-btn">ສັ່ງຊື້ດຽວນີ້</a>
-    </div>
-  </div>
+ <h3 style="text-align:center">
+ Coca-Cola Zero Sugar
+ </h3>
+
+ <p>
+ Coca-Cola Zero Sugar ແມ່ນຜະລິດຕະພັນ
+ ເຄື່ອງດື່ມອັດລົມສູດບໍ່ມີນ້ຳຕານ
+ ທີ່ມີຮູບແບບກະປ໋ອງສີດຳ-ແດງ
+ ເປັນເອກະລັກ.
+ </p>
+
+ <div class="info">
+  <b>ຊື່ສິນຄ້າ:</b> Coca-Cola Zero Sugar<br>
+  <b>ປະເພດ:</b> ເຄື່ອງດື່ມອັດລົມ<br>
+  <b>ຈຸດເດັ່ນ:</b> ສູດບໍ່ມີນ້ຳຕານ<br>
+  <b>ບັນຈຸພັນໃນຮູບ:</b> 24 ກະປ໋ອງ
+ </div>
+</section>
+
+<section class="card">
+ <h2>2. ຈຸດເດັ່ນຂອງສິນຄ້າ</h2>
+ <ul>
+  <li>ສູດບໍ່ມີນ້ຳຕານ</li>
+  <li>ມີລັກສະນະບັນຈຸພັນສີດຳ-ແດງ</li>
+  <li>ເປັນເຄື່ອງດື່ມອັດລົມ</li>
+  <li>ມີຮູບແບບກະປ໋ອງ ແລະແພັກຫຼາຍຂະໜາດ</li>
+ </ul>
+</section>
+
+<section class="card" id="study">
+ <h2>3. ຈຸດປະສົງຂອງການສຶກສາ</h2>
+ <ol>
+  <li>ສຶກສາຂໍ້ມູນຂອງ Coca-Cola Zero Sugar</li>
+  <li>ຮຽນຮູ້ການອອກແບບບັນຈຸພັນສິນຄ້າ</li>
+  <li>ສຶກສາການໂຄສະນາຜ່ານສື່ອອນລາຍ</li>
+  <li>ຝຶກສ້າງເວັບໄຊດ້ວຍ HTML ແລະ CSS</li>
+ </ol>
+</section>
+
+<section class="card">
+ <h2>4. ສະຫຼຸບບົດຮຽນ</h2>
+ <p>
+ ຈາກການສຶກສາ Coca-Cola Zero Sugar
+ ເຮົາໄດ້ຮຽນຮູ້ກ່ຽວກັບຂໍ້ມູນສິນຄ້າ,
+ ການອອກແບບບັນຈຸພັນ,
+ ການນຳສະເໜີ ແລະການໂຄສະນາສິນຄ້າ
+ ຜ່ານເວັບໄຊ.
+ </p>
+</section>
+
+<section class="card" id="contact">
+ <h2>5. ຕິດຕໍ່ ແລະ ແຫຼ່ງຂໍ້ມູນ</h2>
+
+ <p>ເວັບໄຊທາງການ Coca-Cola:</p>
+ <a class="btn"
+ href="https://www.coca-cola.com/"
+ target="_blank">
+ Official Website
+ </a>
+
+ <p>WhatsApp: +856 54303261</p>
+ <a class="btn wa"
+ href="https://wa.me/85654303261"
+ target="_blank">
+ ຕິດຕໍ່ WhatsApp
+ </a>
+</section>
+
+</main>
+
+<footer>
+ <h3>COCA-COLA ZERO SUGAR</h3>
+ <p>ເວັບໄຊແນະນຳສິນຄ້າເພື່ອການສຶກສາ</p>
+ <p>© 2026 Product Education Website</p>
+</footer>
 
 </body>
 </html>
